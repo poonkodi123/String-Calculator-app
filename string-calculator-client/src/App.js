@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './App.css'
 
 
 function App() {
@@ -23,9 +23,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="calculator">
   <div style={{ padding: '20px' }}>
       <form onSubmit={handleSubmit}>
+        
         <input
           type="text"
           value={input}
@@ -33,7 +34,7 @@ function App() {
           placeholder="Enter numbers (e.g., 1,2,3)"
           style={{ marginRight: '10px', padding: '5px' }}
         />
-        <button type="submit" style={{ padding: '5px' }}>Calculate Sum</button>
+        <button type="submit" className="display">Calculate Sum</button>
       </form>
       {result !== '' && <div style={{ marginTop: '10px' }}>Result: {result}</div>}
       {error && <div style={{ marginTop: '10px', color: 'red' }}>Error: {error}</div>}
