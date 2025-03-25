@@ -20,6 +20,12 @@ RSpec.describe StringCalculator, type: :service do
       end
     end
 
+    context 'with two numbers' do
+      it 'returns their substraction' do
+        expect(StringCalculator.substraction('1,2')).to eq(3)
+      end
+    end  
+
     context 'with newlines as delimiters' do
       it 'returns the sum' do
         expect(StringCalculator.add("1\n2,3")).to eq(6)
