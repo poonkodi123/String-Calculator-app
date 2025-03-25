@@ -22,10 +22,12 @@
 }
 
 
-.buttons {
+.buttons:active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 button {
