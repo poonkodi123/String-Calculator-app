@@ -44,3 +44,20 @@ button {
 button:hover {
   background-color: #666;
 }
+
+.clear:hover{
+  background-color: #ff2222;
+}
+
+/*Responsive design*/
+
+@media(max-midth: 400px) {
+  .calculator{
+    width: 95%
+  }
+  button{
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+  }
+}
